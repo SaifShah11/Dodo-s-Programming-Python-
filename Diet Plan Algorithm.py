@@ -6,7 +6,7 @@ Gender = input('Enter your Gender Male/Female ').upper()
 
 Age=int(input('Enter your Age '))
 
-Weight=int(input('Enter your weight in Kgs '))
+Weight=float(input('Enter your weight in Kgs '))
 
 Height=float(input('Enter your height in centimeters '))
       
