@@ -161,11 +161,18 @@ lab_6.place(x=670,y=410,
 
             width=150,height=50)
 
-#--------------------------------------- (Display Output Window)
-lab_output=Label(win,text='Output window')
+#---------------------------------------
+def display():
+    lab_output.config(text=str(BMR.get()))
 
-lab_output.place(x=280, y=500,
-                 width=200,height=200)
+#--------------------------------------- (Display Output Window)
+lab_output=Label(win,
+                 font=('Times New Roman',15),
+                 fg='white',
+                 bg='white')
+
+lab_output.place(x=280, y=450,
+                 width=350,height=150)
 
 #--------------------------------------- (Keeps window active)
 
