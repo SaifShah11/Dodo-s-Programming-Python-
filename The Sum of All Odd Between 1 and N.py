@@ -12,4 +12,4 @@ print(z)
 
 print()
 
-print('The sum of all the odd numbers between 1 to n =', sum(z))
+print('The sum of all the odd numbers between 1 to',user,'=', sum(z))
