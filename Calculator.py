@@ -32,8 +32,8 @@ win.title('Calculator Program')
 
 #-------------------------- Variables
 
-x_num = IntVar()
-y_num = IntVar()
+x_num = DoubleVar()
+y_num = DoubleVar()
 
 #-------------------------- Enter Number 01
 
