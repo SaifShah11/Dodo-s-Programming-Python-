@@ -1,4 +1,4 @@
-from tkinter import *
+    from tkinter import *
 
 #-------------------------------------- (BMR Function)
 def BMR():
@@ -24,9 +24,23 @@ def BMR():
     else:
         print('Incorrect Gender Input')
 
-    print('\n')    
+    print()
 
+#-------------------------------------- (Show function)
 
+def show():
+
+    lab_9.insert()
+    
+#-------------------------------------- (Reset function)
+
+def clear():
+
+    gender_var.set('')
+    age_var.set('')
+    weight_var.set('')
+    height_var.set('')
+    
 #-------------------------------------- (Window)
 
 win=Tk()
@@ -152,7 +166,7 @@ lab_6=Button(win,text=' Submit ',
             fg='#02fae1',
             bg='black',
 
-            activeforeground='green',
+            activeforeground='white',
             activebackground='#3b0131',
 
             command = BMR)
@@ -161,18 +175,52 @@ lab_6.place(x=670,y=410,
 
             width=150,height=50)
 
-#---------------------------------------
-def display():
-    lab_output.config(text=str(BMR.get()))
+#--------------------------------------- (Clear Button)
 
-#--------------------------------------- (Display Output Window)
-lab_output=Label(win,
-                 font=('Times New Roman',15),
-                 fg='white',
-                 bg='white')
+lab_7=Button(win, text= 'Reset',
 
-lab_output.place(x=280, y=450,
-                 width=350,height=150)
+             font=('Times New Roman',15),
+            padx=25, pady=10,
+
+            fg='#02fae1',
+            bg='black',
+
+            activeforeground='white',
+            activebackground='#3b0131',
+
+             command = clear)
+
+lab_7.place(x=825,y=410,
+
+            width=150,height=50)
+
+
+#--------------------------------------- (Show Button)
+
+lab_8=Button(win, text= 'Show',
+             font=('times new roman',15),
+             padx=25, pady=10,
+
+            fg='#02fae1',
+            bg='black',
+
+            activeforeground='white',
+            activebackground='#3b0131',
+
+            command = show)
+
+lab_8.place(x=980, y=410,
+
+            width=150, height=50)
+
+#--------------------------------------- (Output Box)
+
+lab_9=Entry(win, font=('times new roman', 15))
+
+lab_9.place(x=300, y=400,
+
+            width=250, height=150)
+
 
 #--------------------------------------- (Keeps window active)
 
